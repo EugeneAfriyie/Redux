@@ -24,13 +24,21 @@
                 updateProducts: builder.mutation({
                     query: (data) => ({
                         url: "/products",
-                        method: "POST",
+                        method: "PUT",
                         body: data,
                         headers: {
                             "Content-Type": "application/json",
                         },
                     }),
-                        
+
+                    deleteProduct: builder.mutation({
+                        query: (id) => ({
+                            url: `/products/${id}`,
+                            method: "DELETE",
+                        }),
+                    }),
+                
+
                 })
             }),
         }),
@@ -38,7 +46,7 @@
  })
 
 
- export const {useGetAllProductsQuery, useGetSingleProductQuery,useAddProductMutation} = productApi;
+ export const {useGetAllProductsQuery, useGetSingleProductQuery,useAddProductMutation,useUpdateProductMutation} = productApi;
 
 
  
