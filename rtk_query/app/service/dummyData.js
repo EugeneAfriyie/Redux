@@ -21,6 +21,17 @@
                 headers: {
                     "Content-Type": "application/json",
                 },
+                updateProducts: builder.mutation({
+                    query: (data) => ({
+                        url: "/products",
+                        method: "POST",
+                        body: data,
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                    }),
+                        
+                })
             }),
         }),
     }),

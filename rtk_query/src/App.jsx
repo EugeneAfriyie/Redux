@@ -1,6 +1,7 @@
 import React from 'react'
 import AllProducts from './coponents/AllProducts'
 import GetSingleProduct from './coponents/GetSingleProduct'
+import AddnewProduct from './coponents/AddnewProduct'
 
 const App = () => {
 
@@ -8,7 +9,9 @@ const App = () => {
     <div>
       <h1>Redux Toolkit Query</h1>
       {/* <AllProducts /> */}
-      <GetSingleProduct />
+      {/* <GetSingleProduct /> */}
+
+      <AddnewProduct />
     </div>
   )
 }
