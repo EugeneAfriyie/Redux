@@ -1,4 +1,5 @@
 import React from 'react'
+import Counter from './component/counter'
 
 
 const App = () => {
